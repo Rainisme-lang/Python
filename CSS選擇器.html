@@ -1,0 +1,62 @@
+<meta charset="utf-8"/>
+<title>CSS選擇器 - 詳細介紹</title>
+<style type="text/css">
+/*標籤名稱選擇器*/
+body{
+    font-size: 16px;font-family: "微軟正黑體";
+}
+h3{
+    font-size: 30px;text-decoration: underline;
+}
+
+/*class 選擇器*/
+div.content{
+    padding: 10px;border: 1px dashed #888888;
+}
+
+/*Id 選擇器*/
+#btn{
+    border: 1px solid #a100af;
+    background-color: #ffffff;padding: 5px;
+}
+
+/*虛擬選擇器 : 搭配其它選擇器使用*/
+/* :hover 虛擬選擇器 : 滑鼠移到目標上時，套用一組設定*/
+#btn:hover{
+    background-color: darkgrey;
+}
+
+/*:focus 虛擬選擇器 : 當目標取得焦點時，套用一組設定*/
+input:focus{
+    border: 3px solid #ff0000;
+}
+
+/*階段式選擇器 : 搭配其它選擇器使用*/
+.favorite a{
+    color: #00a048;
+}
+
+.demo a{
+    color: #56c9f7;
+}
+
+</style>
+</head>
+<body>
+    <h3>我的自我介紹</h3>
+    <div class="content">
+        大家好，我是雨璃!!!!!
+    </div>
+    <h3>我的最愛連結</h3>
+    <ul class="favorite">
+        <li><a href="https://www.youtube.com/">Youtube</a></li>
+    </ul>
+    <h3>我的作品</h3>
+    <ul class="demo">
+        <li><a href="https://www.google.com/">google</a></li>
+    </ul>
+    <h3>和我聯絡</h3>
+    <div class="content">
+        填寫信息<input type="text" /><button id="btn">送出</button>
+    </div>
+</body>

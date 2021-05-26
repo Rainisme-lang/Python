@@ -1,0 +1,35 @@
+body{margin: 0px;}
+/* nav 樣式設定*/
+nav{
+    display: flex;
+}
+nav>.logo{
+    /*沒有彈性 固定尺寸*/
+    flex: none;width: 100px;
+    background-color: #ffcccc;
+    text-align: center;
+}
+nav>.menu{
+    /*盡量把容器的空間張滿*/
+    flex: auto;
+    background-color: #ccccff;
+    text-align: center;
+}
+nav>.user{
+    flex: none;width: 100px;
+    background-color: #ccffcc;
+    text-align: center;
+}
+/*main 樣式設定*/
+main{/*容器*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #cccccc;
+}
+main>.item{/*項目*/
+    flex: none;
+    width: 300px;margin: 10px;
+    background-color: #ffcccc;
+    text-align: center;
+}
